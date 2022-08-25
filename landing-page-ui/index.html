@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Manage-Landing</title>
 </head>
@@ -15,7 +13,7 @@
     <div class="wrapper">
         <header class="container">
             <a class="link" href="#"><img src="./assets/svg/logo.svg" alt="logo"></a>
-            <nav class="navbar">
+            <nav class="navbar" data-aos="fade-down" data-aos-duration="3000">
                 <ul class="items">
                     <li class="items__list">
                         <a href="#" class="link">pricing</a>
@@ -34,7 +32,7 @@
                     </li>
                 </ul>
             </nav>
-            <button class="btn btn--orange  btn--get-started">get started</button>
+            <button class="btn btn--orange  btn--get-started" >get started</button>
             <div class="hamburger"></div>
         </header>
         <span id="overlay"></span>
@@ -43,7 +41,7 @@
                 <div class="hero__content">
                     <h2 class="heading heading--lg">Bring everyone together to build better products.</h2>
                     <p>Manage makes it simple for software teams to plan day-to-daytasks while keeping the larger team goals in view.</p>
-                    <button class="btn btn--orange btn--get-started btn--lg">get started</button>
+                    <button class="btn btn--orange btn--get-started btn--lg"  data-aos="fade-down" data-aos-duration="3000">get started</button>
                 </div>
                 <img class="hero__pattern" src="./assets/svg/bg-tablet-pattern.svg" alt="pattern">
                 <div class="hero__image">
@@ -52,13 +50,13 @@
                 </div>
             </section>
             <section class="about container">
-                <div class="about__caption">
-                    <h3 class="heading heading--md container">
+                <div class="about__caption" data-aos="zoom-out-right">
+                    <h3 class="heading heading--md container" >
                         What’s different about Manage?
                     </h3>
                     <p>Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams. </p>
                 </div>
-                <div class="about__list-column">
+                <div class="about__list-column" data-aos="zoom-out-left">
                     <div class="about__list-column__item pl">
                         <div class="bg-light-orange">
                             <div class="tab bg-rounded bg-orange">01</div>
@@ -99,7 +97,8 @@
             </div>
             <img class="pattern-2" src="./assets/svg/bg-tablet-pattern.svg" alt="pattern pattern-2">
         </section>
-        <section class="testimonials">
+        <section class="testimonials" data-aos="fade-up"
+        data-aos-duration="3000">
             <h2 class="heading heading--md">What they’ve said</h2>
             <div class=" testimonials__cards swiper">
                 <div class="swiper-wrapper">
@@ -183,6 +182,7 @@
     </div>
     
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/app.js"></script>
     
 </body>
