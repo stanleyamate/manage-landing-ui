@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Manage-Landing</title>
 </head>
@@ -98,27 +101,31 @@
         </section>
         <section class="testimonials">
             <h2 class="heading heading--md">What they’ve said</h2>
-            <div class="testimonials__cards">
-                <div class="testimonials__card">
+            <div class=" testimonials__cards swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonials__card swiper-slide">
                     <img class="testimonials__card__image" src="./assets/img/avatar-ali.png" alt="">
                     <h4 class="heading">Ali Bravo</h4>
-                    <p>“We have been able to cancel so many other subscriptions since using 
+                    <p>“We have been able to cancel so    many other subscriptions since using 
                         
                         Manage. There is no more cross-channel confusion and everyone is much 
                         more focused.”</p>
                     </div>
-                    <div class="testimonials__card">
+                    <div class="testimonials__card swiper-slide">
                         <img class="testimonials__card__image" src="./assets/img/avatar-anisha.png" alt="">
                         <h4 class="heading">Anisha Li</h4>
                         <p>“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
                     </div>
-                    <div class="testimonials__card">
+                    <div class="testimonials__card swiper-slide">
                         <img class="testimonials__card__image" src="./assets/img/avatar-richard.png" alt="">
                         <h4 class="heading">Richard Watts</h4>
                         <p>“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”
                         </p>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
+                </div>
+                
                 <button class="btn btn--orange btn--get-started btn--lg">get started</button>
             </section>
             <section class="jumbo">
@@ -174,8 +181,9 @@
             <p class="footer__cp">Copyright 2020. All Rights Reserved</p>
         </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/app.js"></script>
+    
 </body>
 </html>

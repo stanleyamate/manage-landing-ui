@@ -280,36 +280,38 @@ p{
     border-radius: 40px 0 0 40px;
 }
 .testimonials{
-    position: relative;
     text-align: center;
-    height: 400px;
+    height: auto;
     width: 100%;
-    /* margin-bottom: 10em; */
-    padding: 2em 1em;
+    margin-bottom: 0 !important;
+    padding: 1em 1em;
 }
 .testimonials .heading{
     text-align: center;
     /* margin-bottom: 2em; */
 }
 .testimonials__cards{
+    margin-top: 2em;
+      padding: 2em 0;
         display: flex;
-        /* position: absolute; */
         width: 1100px;
-        bottom: 100px;
 }
 .testimonials__card{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--Vary-Light-Gray);
-    width: 100%;
-    padding: 0 .5em .5em .5em;
+    width: 30%;
+    padding: 0 .5em .5em .5em;  
     margin-right: 1em;
     /* margin-bottom: 5em; */
 }
 .testimonials__card__image{
     width: 70px;
     margin-top: -30px;
+}
+.swiper .swiper-pagination{
+    background-color: ;
 }
 /* .testimonials .btn{
     position: absolute;
@@ -445,7 +447,7 @@ footer *{
         position: initial;
         width: 50%;
         justify-content: center;
-        background: transparent; 
+        /* background: transparent;  */
         /* background: #000; */
     }
     .items{
@@ -456,13 +458,13 @@ footer *{
     }
     .items__list{
         list-style-type: none;
-        margin: 0 1em;
+        margin: 0 .5em;
     }
     .link{
+        font-size: 1.2rem;
         text-decoration: none;
         color: rgb(22, 22, 22);
         text-transform: capitalize;
-    
     }
     
     /* typo */
@@ -484,7 +486,7 @@ footer *{
         align-items: flex-start;
     }
     .hero__content .heading{
-        font-size: 5em;
+        font-size: 3em;
     }
     .hero__content .heading,
     .about__caption .heading{
@@ -558,18 +560,13 @@ footer *{
         text-align: center;
         margin-bottom: 2em;
     }
-    .testimonials__cards{
-            display: flex;
-            width: 100%;
-            gap: 1em;
-    }
+ 
     .testimonials__card{
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: var(--Vary-Light-Gray);
-        width: 100%;
-        margin-bottom: 5em;
+        /* width: 500px !important; */
     }
     .testimonials__card__image{
         width: 70px;
@@ -650,4 +647,36 @@ footer *{
         font-size: 1.3rem;
         text-align: right;
     }
+    .swiper { 
+    padding-top: 8em;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 80px;
+    height: 100%;
+    object-fit: cover;
+  }
 }
+
+/* Responsive */
+
